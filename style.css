@@ -2,15 +2,14 @@
 	margin:0;
 	padding:0; 
     font-family: 'Roboto',sans-serif;
-    font-weight: lighter;
     ;
  }
 
 .header{
-font-family: 'Nunito',sans-serif; 
+font-family: 'Nunito',sans-serif;  
 min-height:100vh;
 width:100%;
-background-image:linear-gradient(rgba(255,128,88,0.7),rgba(255,255,255,0.7)),url(images/header.jpg);
+background-image:linear-gradient(rgba(255,128,88,0.2),rgba(255,255,255,0.3)),url(images/header.jpeg);
 background-position:center;
 background-size:cover;
 position:relative;
@@ -39,9 +38,9 @@ nav{
 	position:relative;
 }
 .nav-links ul li a{
-	color:#1B263B;
+	color:#fff;
 	text-decoration: none;
-    font-size: 12px;
+    font-size: 20px;
 }
 .nav-lins ul li::after{
     content: '';
@@ -75,16 +74,20 @@ nav{
 .hero-btn{
     display: inline-block;
     text-decoration: none;
-    color: #fff;border: 1px solid #fff;
+    color: #7692FF;
+    border: 2px solid #7692FF;
     padding: 15px 26px;
     font-size: 16px;
     background: transparent;
+    font-family: 'Nunito',sans-serif;
+    font-weight: 300;
     position: relative;
-    cursor: pointer;    
+    cursor: pointer;
+    margin-top: 20px;
 }
 .hero-btn:hover{
-    border: 1px solid #1B2CC1;
-    background: #7692FF;
+    border: 2px solid #1B2CC1;
+    background: #1B2CC1;
     transition: 1s;
 }
 @media(max-width:800px){
@@ -95,44 +98,115 @@ nav{
     
  /*---course-----*/
     
-    .course{
-        width: 80%;
-        margin: auto;
+.course{
+        width:100%;
+        margin:auto;
+        background: #7692FF;
         text-align: center;
         padding-top: 100px;
+        padding-bottom: 60px;
     }    
 
 h1{
-    font-size: 26px;
+    font-size: 36px;
     font-weight: 600;
 }
-p{
+.course-col h3{
+    text-align: center;
+    font-weight: bold;
+    margin: 10px 0;
+    margin-top: 16px;
+    margin-bottom: 15px;
+}
+.course-col p{
     color: #3D518C;
     font-size:14px;
-    font-weight: 300;
+    font-weight: 400;
     line-height:22px;
-    padding: 10px;    
+    padding: 10px;
+
 }
 .row{
     margin-top: 5%;
     display: flex;
-    justify-content: space-between;   
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 .course-col{
-    flex-basis:20%;
-    background: #7692FF;
+    flex-basis:32%;
+    background: #fff;
     border-radius: 10px;
-    margin-bottom: 5px;
-    padding: 20px 12px;
-    box-sizing: border-box;
-    transition: 0.5s;
+    margin-bottom: 50px;
+    position: relative;
+    overflow: hidden;   
 }
-.h3{
-    text-align: center;
-    font-weight: 600p;
-    margin: 10px 0;
+
+.course-col img{
+    width: 100%;
 }
-.course-col:hover{
-    box-shadow: 0 0 40px 0px rgba(0,0,0,0.2);
+
+
+
+.layer{
+    background: rgba(226,0.0.0.7);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top:0;
+    left:0;
 }
+
+
     
+/*-----------call to action--------------*/
+.consult {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+
+.cta{
+    margin:100px auto;
+    width: 90%;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(images/contact.jpeg);
+    background-position: center;
+    background-size: cover;
+    border-radius:10px;
+    text-align: center;
+    padding:100px 0;
+}
+    .cta h1{
+        color: #fff;
+        margin-bottom: 40px;
+        padding: 0;
+        
+    }
+
+/*-----------footer--------------*/
+
+.footer {
+    width: 100%;
+    margin: auto;
+    background-color: #7692FF;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.footer h3{
+    font-size:20px;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+.footer p{
+    padding-top: 10px;
+    text-align: center;
+}
+
+
+
+    
+   
